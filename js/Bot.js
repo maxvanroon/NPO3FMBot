@@ -70,7 +70,7 @@ Bot.login = function() {
 
 Bot.onReady = function() {
 	console.log('Bot is ready!');
-	bot.user.setGame('TEST');
+	bot.user.setStatus('DND');
 };
 
 Bot.preformInitialization = function() {
