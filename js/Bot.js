@@ -69,8 +69,7 @@ Bot.login = function() {
 };
 
 Bot.onReady = function() {
-	console.log('Bot is ready!');
-	bot.user.setStatus('DND');
+	console.log('NPO 3FM - Music Starts Here');
 };
 
 Bot.preformInitialization = function() {
