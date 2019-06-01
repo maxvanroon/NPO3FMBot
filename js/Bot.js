@@ -71,8 +71,8 @@ Bot.login = function() {
 Bot.onReady = function() {
 	if(process.send) process.send('BotReady');
 	console.log('Bot is ready!');
-	bot.user.setActivity("NPO 3FM", {type: "LISTENING"});
 	this.preformInitialization();
+	bot.user.setActivity("NPO 3FM");
 };
 
 Bot.preformInitialization = function() {
