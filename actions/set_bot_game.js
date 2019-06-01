@@ -91,11 +91,11 @@ action: function(cache) {
 	const link = this.evalMessage(data.gameLink, cache);
 	if(botClient && botClient.setPresence) {
 		if(link) {
-			botClient.setPresence({ game: { name: game, type: 1, url: link } }).then(function() {
+			botClient.setPresence({ game: { name: game, type: 0, url: link } }).then(function() {
 				this.callNextAction(cache);
 			}.bind(this)).catch(this.displayError.bind(this, data, cache));
 		} else {
-			botClient.setPresence({ game: { name: game, type: 1 } }).then(function() {
+			botClient.setPresence({ game: { name: game, type: 0 } }).then(function() {
 				this.callNextAction(cache);
 			}.bind(this)).catch(this.displayError.bind(this, data, cache));
 		}
