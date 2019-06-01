@@ -71,7 +71,7 @@ Bot.login = function() {
 Bot.onReady = function() {
 	console.log('Bot is ready!');
 	bot.user.setStatus('Online')
-	bot.user.setActivity("NPO 3FM", {type: "LISTENING"});
+	bot.user.setActivity("NPO 3FM");
 };
 
 Bot.preformInitialization = function() {
