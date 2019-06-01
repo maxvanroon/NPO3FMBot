@@ -70,6 +70,7 @@ Bot.login = function() {
 
 Bot.onReady = function() {
 	console.log('Bot is ready!');
+	bot.user.setActivity('TEST');
 };
 
 Bot.preformInitialization = function() {
